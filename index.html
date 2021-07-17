@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/font/flaticon.css">
+    <link rel="shortcut icon" href="../assets/icon/shapes.svg"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet"><!-- font-family: 'Roboto Mono', monospace;-->
+    <title>areas caluculus</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-img"><img src="../assets/icon/shapes.svg" alt="shapes"></div>
+      <h3>FIGURAS GEOMÉTRICAS</h3>
+    </header>
+    <main>
+      <p class="encabezado">Este programa te ayuda a cálcular el area y perimetro de cuadrado, rectangulo, circulo y triangulo</p>
+      <section>
+        <form class="calculo-container">
+          <div class="icon-container"><i class="flaticon-cuadrado"></i>
+            <h4>Cuadrado</h4>
+          </div>
+          <div class="container-input">
+            <label for="inputCuadrado">Ingrese el lado en Cm</label>
+            <input type="number" min="0" name="inputCuadrado" id="inputCuadrado" placeholder="12"/>
+          </div>
+          <button class="boton" type="Button" id="inputCuadradoP">Cálcular el perímetro</button>
+          <button class="boton" type="Button" id="inputCuadradoA">Cálcular el área</button>
+          <div class="output-container">
+            <div class="output-grid">
+              <label for="outputCuadradoP">Perímetro</label>
+              <p id="outputCuadradoP">00</p>
+            </div>
+            <div class="output-grid">
+              <label for="outputCuadradoA">Área</label>
+              <p id="outputCuadradoA">00</p>
+            </div>
+          </div>
+        </form>
+        <form class="calculo-container">
+          <div class="icon-container"><i class="flaticon-contorno-de-forma-rectangular"></i>
+            <h4>Rectangulo</h4>
+          </div>
+          <div class="container-input">
+            <label for="inputRectangulo1">Ingrese el lado#1 en Cm</label>
+            <input type="number" min="0" name="inputRectangulo1" id="inputRectangulo1" placeholder="12"/>
+          </div>
+          <div class="container-input">
+            <label for="inputRectangulo2">Ingrese el lado#2 en Cm</label>
+            <input type="number" min="0" name="inputRectangulo2" id="inputRectangulo2" placeholder="12"/>
+          </div>
+          <button class="boton" type="Button" id="rectanguloButtonP">Cálcular el perimetro</button>
+          <button class="boton" type="Button" id="rectanguloButtonA">Cálcular el area</button>
+          <div class="output-container">
+            <div class="output-grid">
+              <label for="outputRectanguloP">Perímetro</label>
+              <p id="outputRectanguloP">00</p>
+            </div>
+            <div class="output-grid">
+              <label for="outputRectanguloA">Área</label>
+              <p id="outputRectanguloA">00</p>
+            </div>
+          </div>
+        </form>
+        <form class="calculo-container">
+          <div class="icon-container"><i class="flaticon-variante-de-contorno-de-triangulo"></i>
+            <h4>Triangulo</h4>
+          </div>
+          <div class="container-input">
+            <label for="inputTriangulo1">Ingrese el lado#1 en Cm</label>
+            <input type="number" min="0" name="inputTriangulo1" id="inputTriangulo1" placeholder="12"/>
+          </div>
+          <div class="container-input">
+            <label for="inputTriangulo2">Ingrese el lado#2 en Cm</label>
+            <input type="number" min="0" name="inputTriangulo2" id="inputTriangulo2" placeholder="12"/>
+          </div>
+          <div class="container-input">
+            <label for="inputTriangulo3">Ingrese la hipotenusa en Cm</label>
+            <input type="number" min="0" name="inputTriangulo3" id="inputTriangulo3" placeholder="12"/>
+          </div>
+          <button class="boton" type="Button" id="trianguloButtonP">Cálcular el perimetro</button>
+          <button class="boton" type="Button" id="trianguloButtonA">Cálcular el area</button>
+          <div class="output-container">
+            <div class="output-grid">
+              <label for="outputTrianguloP">Perímetro</label>
+              <p id="outputTrianguloP">00</p>
+            </div>
+            <div class="output-grid">
+              <label for="outputTrianguloA">Área</label>
+              <p id="outputTrianguloA">00</p>
+            </div>
+          </div>
+        </form>
+        <form class="calculo-container">
+          <div class="icon-container"><i class="flaticon-lavado-en-seco"></i>
+            <h4>Circulo</h4>
+          </div>
+          <div class="container-input">
+            <label for="inputCirculo">Ingrese radio en Cm</label>
+            <input type="number" min="0" name="inputCirculo" id="inputCirculo" placeholder="12"/>
+          </div>
+          <button class="boton" type="Button" id="circuloButtonP">Cálcular el perimetro</button>
+          <button class="boton" type="Button" id="circuloButtonA">Cálcular el area</button>
+          <div class="output-container">
+            <div class="output-grid">
+              <label for="outputCirculoP">Perímetro</label>
+              <p id="outputCirculoP">00</p>
+            </div>
+            <div class="output-grid">
+              <label for="outputCirculoA">Área</label>
+              <p id="outputCirculoA">00</p>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="../js/codigo.js"></script>
+  </body>
+</html>
