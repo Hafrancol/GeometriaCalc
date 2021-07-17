@@ -1,0 +1,41 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?e161233ef32b6402a2b572505f98bc50") format("truetype"),
+url("./flaticon.woff?e161233ef32b6402a2b572505f98bc50") format("woff"),
+url("./flaticon.woff2?e161233ef32b6402a2b572505f98bc50") format("woff2"),
+url("./flaticon.eot?e161233ef32b6402a2b572505f98bc50#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e161233ef32b6402a2b572505f98bc50#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "cuadrado": "\f101",
+    "variante-de-contorno-de-triangulo": "\f102",
+    "lavado-en-seco": "\f103",
+    "contorno-de-forma-rectangular": "\f104",
+);
+
+.flaticon-cuadrado:before {
+    content: map-get($flaticon-map, "cuadrado");
+}
+.flaticon-variante-de-contorno-de-triangulo:before {
+    content: map-get($flaticon-map, "variante-de-contorno-de-triangulo");
+}
+.flaticon-lavado-en-seco:before {
+    content: map-get($flaticon-map, "lavado-en-seco");
+}
+.flaticon-contorno-de-forma-rectangular:before {
+    content: map-get($flaticon-map, "contorno-de-forma-rectangular");
+}
