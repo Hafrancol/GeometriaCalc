@@ -63,13 +63,13 @@ cuadradoButtonA.addEventListener("click",calcCuadradoA);
 function calcCuadradoP(){
 	cuadradoP=parseFloat(cuadrado.value) * 4 ;
 	document.getElementById("outputCuadradoP").innerHTML=cuadradoP+" Cm";
-	cuadrado.value="";
+	
 }
 
 function calcCuadradoA(){
 	cuadradoA= Math.pow(parseFloat(cuadrado.value),2);
 	document.getElementById("outputCuadradoA").innerHTML=cuadradoA +" Cm^2";
-	cuadrado.value="";
+	
 }
 
 //****************Rectangulo funcionalidad************** */
@@ -80,15 +80,13 @@ rectanguloButtonA.addEventListener("click",calcRectanguloA);
 function calcRectanguloP(){
 	rectanguloP=(parseFloat(rectangulo1.value) * 2) +(parseFloat(rectangulo2.value) * 2 );
 	document.getElementById("outputRectanguloP").innerHTML=rectanguloP+" Cm";
-	rectangulo1.value="";
-	rectangulo2.value="";
+	
 }
 
 function calcRectanguloA(){
 	rectanguloA= parseFloat(rectangulo1.value) * parseFloat(rectangulo2.value);
 	document.getElementById("outputRectanguloA").innerHTML=rectanguloA +" Cm^2";
-	rectangulo1.value="";
-	rectangulo2.value="";
+	
 }
 
 //****************Triangulo funcionalidad************** */
@@ -99,15 +97,13 @@ trianguloButtonA.addEventListener("click",calcTrianguloA);
 function calcTrianguloP(){
 	trianguloP=parseFloat(triangulo1.value) +parseFloat(triangulo2.value)+parseFloat(triangulo3.value);
 	document.getElementById("outputTrianguloP").innerHTML=trianguloP+" Cm";
-	triangulo1.value="";
-	triangulo2.value="";
+	
 }
 
 function calcTrianguloA(){
 	trianguloA=(parseFloat(triangulo1.value)*parseFloat(triangulo2.value))/2;
 	document.getElementById("outputTrianguloA").innerHTML=trianguloA +" Cm^2";
-	triangulo1.value="";
-	triangulo2.value="";
+	
 }
 
 //***************Circulo funcionalidad*************** */
@@ -118,7 +114,7 @@ function calcCirculoP(){
 	circuloP= 2 * Math.PI * parseFloat(circulo.value);
 	circuloP=circuloP.toFixed(2);
 	document.getElementById("outputCirculoP").innerHTML=circuloP + " Cm";
-	circulo.value="";
+	
 
 }
 
@@ -126,7 +122,7 @@ function calcCirculoA(){
 	circuloA= Math.PI * Math.pow(parseFloat(circulo.value),2);
 	circuloA=circuloA.toFixed(2);
 	document.getElementById("outputCirculoA").innerHTML=circuloA + " Cm^2"
-	circulo.value="";
+	
 }
 
 
